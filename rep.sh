@@ -31,6 +31,40 @@ git diff	# mówi o tym jakie zmiany w katalogu roboczym nie zostały wrzucone do
 
 git diff --cached	# mówi o tym co jest w przechowalni gotowe do commita
 
-git commit -a "Nowa komenda commit z parametrem -a"		# 
+git commit -a -m "Nowa komenda commit z parametrem -a"	# dodaje do commita wszystkie pliki które były śledzone
+
+git rm --cached README	# usówa plik ze śledzonych ale nie fizycznie z dysku
+#git rm README	# usówanie pliku README ze śledzonych oraz fizyczne usunięcie go z katalogu
+#git rm log/\*.log	# usuwa wszystkie pliki które mają rozszerzenie .log w katalogu log/
+#git rm \*~	# usuwa wszystkie pliki kończące się na ~
 
 
+#git README README.txt	# zmieni nazwę pliku na dysku i będzie śledzić plik o nowej nazwie
+
+
+git log	# lista zobionych commitów odwrotnie chronologicznie
+git log -2 # ostatnie dwa commity
+git log -p # każdy commit ze szczegółowym opisem zmian
+# --stat # statystyki zmian
+# --pretty=oneline # w jednej linii
+# --pretty=short full fyller
+
+# --pretty=format:"%h - %an, %ar : %s"
+	# Opcja Opis wyjścia
+	# %H Hash commita
+	# %h Skrócony hash commita
+	# %T Drzewo hashy
+	# %t Skrócone drzewo hashy
+	# %P Hashe rodziców
+	# %p Skrócone hashe rodziców
+	# %an   Imię autora
+	# %ae   e-mail autora
+	# %ad   Data (jest respektowana format opcja –date=)
+	# %ar   Relatywna data
+	# %cn   Imię commitera
+	# %ce   e-mail commitera
+	# %cd   Data commitera
+	# %cr   Relatywna data commitera
+	# %s Tytuł
+
+git log --pretty=format:"%h %s" --graph
