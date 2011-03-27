@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "power.h"
+
 using namespace std;
 
 	/**
@@ -14,6 +16,8 @@ int main()
 {
 	cout << "Hello World!" << endl;
 	cout << "Silnia: 6! = " << silnia(6) << endl;
+	cout << "Potęga: 3^4 = " << pow(3,4) << endl;
+	
 	return 0;
 }
 
