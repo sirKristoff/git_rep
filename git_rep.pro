@@ -21,4 +21,5 @@ OTHER_FILES += \
     README
 
 HEADERS += \
-    power.h
+    power.h \
+    sum.h
