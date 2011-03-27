@@ -13,6 +13,7 @@ int silnia( int i );
 int main()
 {
 	cout << "Hello World!" << endl;
+	cout << "Silnia: 6! = " << silnia(6) << endl;
 	return 0;
 }
 
