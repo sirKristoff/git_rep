@@ -14,7 +14,7 @@ int silnia( int i );
 	 */
 int main()
 {
-	cout << "Hello World!" << endl;
+	cout << "Hello World!" << "\tv1.0" << endl;
 	cout << "Silnia: 6! = " << silnia(6) << endl;
 	cout << "Potęga: 3^4 = " << pow(3,4) << endl;
 	
