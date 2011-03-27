@@ -2,6 +2,9 @@
 
 using namespace std;
 
+	/**
+	 *	@brief	Silnia
+	 */
 int silnia( int i );
 
 	/**
